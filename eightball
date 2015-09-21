@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+import random 
+print("""
+Welcome To The Magic 8 ball
+Enter your question below:
+""")
+
+answers =  ["Yes.",
+c.r + "No." + c.x,
+c.m + "Maybe." + c.x,
+c.g + "Defintly." + c.x,
+c.b + "I Dont Think so."+ c.x,
+c.m + "when pigs fly." + c.x,
+c.o + "in 20000 years." + c.x,
+"when you become Vader.",
+"who cares.",
+"when you die.",
+"Good.",
+"duh.",
+]
+
+try:
+
+    while True:
+        question = input("-->")
+        if "die" in question or  "death" in question:
+            print(c.base3 +  "Well that is very morbid" + c.x)
+        elif "love" in question:
+            print(c.red + "love is beyond my powers to predict." + c.x)
+        else:
+            answer = random.choice(answers)
+            print(answer)
+
+except KeyboardInterrupt:
+    print("Thanks for stopping bye at the magic 8 ball see you soon")
+    exit()
