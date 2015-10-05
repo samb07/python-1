@@ -22,8 +22,8 @@ c.m + "when you die." + c.x,
 c.o + "Good." + c.x,
 c.g + "duh." + c.x,
 '''           
-HHHHHHH       HHHHHHH   
-H:::::H       H:::::H
+HHHHHHH       HHHHHHH  E 
+H:::::H       H:::::H  E
 H:::::H       H:::::H
 H:::::H       H:::::H
 h:::::H       H:::::H
@@ -80,8 +80,8 @@ try:
         if "die" in question or  "death" in question:
             print(c.base3 +  "Well that is very morbid" + c.x)
         elif "love" in question:
-             print(c.red + "love is beyond my powers to predict." + c.x)
-        elif question == 'bye' or question == 'goodbye':
+            print(c.red + "love is beyond my powers to predict." + c.x)
+        elif "bye"  in question or "goodbye" in question:
             bye()
         else:
             answer = random.choice(answers)
